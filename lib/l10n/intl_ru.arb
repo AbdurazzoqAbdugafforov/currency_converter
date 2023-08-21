@@ -1,4 +1,15 @@
 {
-  "enterValue" : "Введите значение",
-  "currencyConverter": "Конвертер валют"
+  "currencyConverter": "Конвертер валют",
+  "rateOnPlayMarket": "оценить на PlayMarket",
+  "programcode": "Программные коды",
+  "telegramChannel": "Наш Telegram канал",
+  "facebookChannel": "Мы на Фейсбуке",
+  "twitterChannel": "Мы в Твиттере",
+  "instagramChannel": "Мы в Инстаграмм",
+  "option": "Мнение",
+  "aboutTheProgram": "О программе",
+  "wordurl": " Центральный банк Республики Узбекистан ",
+  "word": "подготовлены на основе открытых данных. Программа с открытым исходным кодом, ",
+  "word2": "распределяется на основе",
+  "uzs": "Узбекский сум"
 }

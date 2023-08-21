@@ -1,10 +1,54 @@
 {
-  "enterValue": "Enter the value",
-  "@enterValue": {
-    "description": "Enter"
-  },
   "currencyConverter": "Currency converter",
-  "@currencyConverter" : {
+  "@currencyConverter": {
     "description": "Converter"
+  },
+  "rateOnPlayMarket": "RateOnPlayMarket",
+  "@rateOnPlayMarket": {
+    "description": "rate"
+  },
+  "programcode": "Program code",
+  "@programcode": {
+    "description": "code"
+  },
+  "telegramChannel": "Telegram channel",
+  "@telegramChannel": {
+    "description": "channel"
+  },
+  "facebookChannel": "Facebook channel",
+  "@facebookChannel": {
+    "description": "code"
+  },
+  "twitterChannel": "Twitter channel",
+  "@twitterChannel": {
+    "description": "code"
+  },
+  "instagramChannel": "Instagram channel",
+  "@instagramChannel": {
+    "description": "code"
+  },
+  "option": "Option",
+  "@option": {
+    "description": "code"
+  },
+  "aboutTheProgram": "About The Program",
+  "@aboutTheProgram": {
+    "description": "code"
+  },
+  "wordurl": "Central Bank of the Republic of Uzbekistan ",
+  "@wordurl": {
+    "description": "word"
+  },
+  "word": " prepared on the basis of open data. The program is open source, ",
+  "@word": {
+    "description": "word"
+  },
+  "word2": " distributed based on ",
+  "@word2": {
+    "description": "word"
+  },
+  "uzs": "Uzbek soum",
+  "@uzs": {
+    "description": "uzs"
   }
 }

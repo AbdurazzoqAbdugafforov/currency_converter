@@ -3,6 +3,17 @@ import 'currency.dart';
 import 'home_page.dart';
 
 class AppHelpers {
+  static Currency getCurrentCurrency(List<Currency> histories,Currency currency){
+    for(Currency history in histories){
+      if(history.id == currency.id){
+        return history;
+
+      }
+    }
+    return currency;
+  }
+
+
   static String getFormattedDate(DateTime date) {
     return '${date.year}-${date.month > 9 ? date.month : '0${date
         .month}'}-${date.day > 9 ? date.day : '0${date.day}'}';
@@ -22,7 +33,7 @@ class AppHelpers {
   }
 
 
-  static String getHomePageNameByLocale(Currency currency, String locale) {
+  static String getHomePageNameByLocale(String locale) {
     switch (locale) {
       case 'uz' :
         return 'VALYUTA KURSLARI';
@@ -32,6 +43,18 @@ class AppHelpers {
         return 'ОБМЕННЫЕ КУРСЫ';
       default:
         return 'VALYUTA KURSLARI';
+    }
+  }
+  static String getNameByLocale(String locale) {
+    switch (locale) {
+      case 'uz' :
+        return 'O\'zbek so\'mi';
+      case 'en' :
+        return 'UZS';
+      case 'ru' :
+        return 'Узбекский сум';
+      default:
+        return 'O\'zbek so\'mi';
     }
   }
 

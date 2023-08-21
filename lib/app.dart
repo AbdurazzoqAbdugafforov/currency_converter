@@ -17,12 +17,8 @@ class MyApp extends StatelessWidget {
             home: HomePage(),
             supportedLocales: AppLocalizations.supportedLocales,
             localizationsDelegates: AppLocalizations.localizationsDelegates,
-              locale: Provider
-                  .of<AppProvider>(context)
-                  .locale,
+            locale: Provider.of<AppProvider>(context).locale,
           );
-        }
-    );
+        });
   }
 }
-

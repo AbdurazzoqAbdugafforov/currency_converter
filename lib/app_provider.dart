@@ -1,15 +1,25 @@
-import 'package:flutter/cupertino.dart';
+import 'package:currency_converter/locale_source.dart';
+import 'package:flutter/material.dart';
 
-class AppProvider extends ChangeNotifier{
-  String _locale = 'uz';
+class AppProvider extends ChangeNotifier {
+  Locale? get locale {
+    final String script = LocalSource.instance.getScriptCode();
+    final String code = LocalSource.instance.getLocaleCode();
+    if (script.isEmpty) {
+      return Locale.fromSubtags(languageCode: code);
+    } else {
+      return Locale.fromSubtags(languageCode: code, scriptCode: script);
+    }
+  }
 
-
-  Locale get locale => Locale(_locale);
-
-  void setLocale(String locale){
-    _locale = locale;
+  void setLocale(String languageCode, String? scriptCode) {
+    LocalSource.instance.setLocaleCode(localeCode: languageCode);
+    LocalSource.instance.setLocaleScriptCode(scriptCode ?? '');
     notifyListeners();
   }
 
-
+  void clearLocale() {
+    LocalSource.instance.clear();
+    notifyListeners();
+  }
 }
