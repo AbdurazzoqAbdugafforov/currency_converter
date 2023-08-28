@@ -94,8 +94,13 @@ class _ConverterPageState extends State<ConverterPage> {
                     if (value.isEmpty) {
                       _calculatedSum = 0;
                     } else {
-                      _calculatedSum = double.parse(value) *
-                          double.parse(widget.currency.rate ?? '');
+                      if (_isUzsMain) {
+                        _calculatedSum = double.parse(value) /
+                            double.parse(widget.currency.rate ?? '');
+                      } else {
+                        _calculatedSum = double.parse(value) *
+                            double.parse(widget.currency.rate ?? '');
+                      }
                     }
                   });
                 },
@@ -148,7 +153,8 @@ class _ConverterPageState extends State<ConverterPage> {
                   alignment: Alignment.centerRight,
                   child: Text(
                     NumberFormat.currency(
-                      symbol: '${_isUzsMain ? '${widget.currency.ccy}' : 'UZS'} ',
+                      symbol:
+                          '${_isUzsMain ? '${widget.currency.ccy}' : 'UZS'} ',
                     ).format(_calculatedSum),
                   ),
                 ),
