@@ -20,7 +20,7 @@ dependencies:
   flutter_remix: ^0.0.3
   flutter_native_splash: ^2.3.1
   shared_preferences: ^2.2.0
-
+  keyboard_dismisser: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -30,7 +30,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  generate : true
+  generate: true
   assets:
     - assets/images/
 

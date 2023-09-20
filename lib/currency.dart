@@ -1,4 +1,4 @@
-class CurrencyResponse {
+  class CurrencyResponse {
   CurrencyResponse({List<Currency>? data}) {
     _data = data;
   }

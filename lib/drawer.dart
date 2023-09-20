@@ -1,14 +1,9 @@
-import 'package:currency_converter/app_helpers.dart';
-import 'package:currency_converter/dasturhaqida.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_remix/flutter_remix.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dasturhaqida.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-String _locale = 'uz';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeDrawer extends StatelessWidget {
   const HomeDrawer({super.key});
@@ -18,7 +13,7 @@ class HomeDrawer extends StatelessWidget {
     final translate = AppLocalizations.of(context);
     return Drawer(
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
               Color(0xFF00D0CE),
@@ -44,7 +39,7 @@ class HomeDrawer extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(
                   '${translate?.currencyConverter}',
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
@@ -141,18 +136,18 @@ class HomeDrawer extends StatelessWidget {
                               children: [
                                 Text(
                                   '${translate?.currencyConverter}',
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontWeight: FontWeight.w500,
                                       fontSize: 20),
                                 ),
-                                SizedBox(height: 10),
-                                Text(
+                                const SizedBox(height: 10),
+                                const Text(
                                   'v1.0.0',
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 ),
                                 RichText(
@@ -172,7 +167,7 @@ class HomeDrawer extends StatelessWidget {
                                     children: [
                                       TextSpan(
                                         text: '${translate?.word}',
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             color: Colors.black,
                                             fontSize: 16,
                                             decoration: TextDecoration.none),
@@ -192,7 +187,7 @@ class HomeDrawer extends StatelessWidget {
                                       ),
                                       TextSpan(
                                         text: ' ${translate?.word2}',
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             color: Colors.black,
                                             fontSize: 16,
                                             decoration: TextDecoration.none),
@@ -256,7 +251,7 @@ class HomeDrawer extends StatelessWidget {
       leading: Icon(iconData, color: Colors.black),
       title: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
             fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black),
       ),
     );
